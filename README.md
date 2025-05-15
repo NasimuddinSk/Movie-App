@@ -1,16 +1,48 @@
-# movie_app
+# Movie App
 
-A new Flutter project.
+A Flutter project for a movie app.
 
-## Getting Started
+## Project Structure
 
-This project is a starting point for a Flutter application.
+The project is structured into the following directories:
 
-A few resources to get you started if this is your first Flutter project:
+- `lib`: Contains the Dart code for the app.
+- `pubspec.yaml`: The configuration file for the project.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Lib Directory
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The `lib` directory contains the following subdirectories:
+
+- `core`: Contains the core functionality of the app, including constants, error handling, and locator setup.
+- `data`: Contains the data models and repository for the app.
+- `future`: Contains the BLoC (Business Logic Component) architecture for the app, including cubits and states.
+- `main.dart`: The entry point of the app.
+
+## Pubspec.yaml
+
+The `pubspec.yaml` file contains the project's dependencies and configuration.
+
+## Dependencies
+
+The project depends on the following packages:
+
+- `flutter`
+- `cupertino_icons`
+- `flutter_bloc`
+- `http`
+- `go_router`
+- `carousel_slider`
+- `google_fonts`
+- `fpdart`
+- `get_it`
+
+## Constants
+
+The `Constrants` class in [lib/core/constrants.dart](cci:7://file:///c:/Z-Developments/My%20All%20Projects/movie_app/lib/core/constrants.dart:0:0-0:0) contains the following constants:
+
+- `imageUrl`: The base URL for image assets.
+- `apiKey`: The API key for the movie database.
+- `baseUrl`: The base URL for the movie database API.
+- `trandingEndPoint`: The endpoint for trending movies.
+- `topRatedEndPoint`: The endpoint for top-rated movies.
+- `upCommingEndPoint`: The endpoint for upcoming movies.
